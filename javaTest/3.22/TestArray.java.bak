@@ -1,0 +1,15 @@
+class TestArray 
+{
+	public static void main(String[] args) 
+	{
+		int[] date = new int[3];
+		date[0] = 10;
+		date[1] = 20;
+		date[2] = 30;
+		int[] temp = date;
+		temp[2] = 99;
+		for(int x = 0; x<date.length; x++){
+			System.out.print(date[x] + "\t");
+		}
+	}
+}

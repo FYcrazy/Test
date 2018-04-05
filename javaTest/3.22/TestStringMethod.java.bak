@@ -1,0 +1,12 @@
+class TestStringMethod 
+{
+	public static void main(String[] args) 
+	{
+		//charAt·½·¨
+		String s = "Hello";
+		char c = s.charAt(1);
+		System.out.println(c);
+
+		System.out.println("***********************");
+	}
+}

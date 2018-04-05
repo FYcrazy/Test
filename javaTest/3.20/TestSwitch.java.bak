@@ -1,0 +1,21 @@
+class TestSwitch 
+{
+	public static void main(String[] args) 
+	{
+		int num = 1;
+		switch(num){
+			case 2:{
+				System.out.println("内容为2");
+			}
+			case 1:{
+				System.out.println("内容为1");
+			}
+			case 3:{
+				System.out.println("内容为3");
+			}
+			default:{
+				System.out.println("内容不匹配");
+			}
+		}
+	}
+}

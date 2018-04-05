@@ -1,0 +1,21 @@
+class ReverseArray extends Array 
+{
+	
+	public ReverseArray(int sum){
+		super(sum);
+	}
+
+	public int[] getDate(){
+		int[] date = super.getDate();
+		int[] result = new int[date.length];
+		int x = date.length - 1;
+		int temp;
+		for(int y = 0; y < date.length; y++){
+			temp = date[y];
+			result[y] = date[x];
+			date[x] = temp;
+			x--;
+		}
+		return result;
+	}
+}

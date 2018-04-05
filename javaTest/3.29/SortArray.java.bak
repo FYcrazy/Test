@@ -1,0 +1,7 @@
+class SortArray extends Array 
+{
+	public int[] getDate(){
+		java.util.Arrays.sort(super.getDate());
+		return super.getDate();
+	}
+}

@@ -1,0 +1,8 @@
+class TestString{
+    public void static void main(String[] args){
+	String str = "Hello";
+	str = str + " World";
+	str += "!!!";
+	System.out.println(str);
+    }
+}
