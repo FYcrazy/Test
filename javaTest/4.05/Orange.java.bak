@@ -1,0 +1,6 @@
+class Orange implements Fruit 
+{
+	public void ear(){
+		System.out.println("吃橘子");
+	}
+}
