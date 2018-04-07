@@ -22,7 +22,7 @@ class Book
 	}
 
 	public void setPrice(double price){
-		this.title = price;
+		this.price = price;
 	}
 
 	public double getPrice(){
@@ -34,15 +34,17 @@ class Book
 			return false;
 		}
 
-		if(super.toString == obj){
+		if(super.toString() == obj){
 			return true;
 		}
 		
 		if(!(obj instanceof Book)){
 			return false;
 		}
+		
+		Book b = (Book)obj;
 
-		if(Book.getTitle().equals(this.title) && (Book.getPrice() == this.price)){
+		if(b.getTitle().equals(this.title) && (b.getPrice() == this.price)){
 			return true;
 		}
 

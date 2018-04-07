@@ -138,8 +138,7 @@ class Link
 		if(this.head != null){
 			this.dates = new Object[this.size];
 			this.foot = 0;
-			this.head.toArray();
-			return dates;
+			return this.head.toArray();
 		}else{
 			return null;
 		}
