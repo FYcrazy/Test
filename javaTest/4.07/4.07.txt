@@ -5,7 +5,7 @@
   1.1 toString
     Object类中的toString返回的是对象的地址，直接打印一个对象的输出结果就是这个对象的地址。所以当我们写一个  javabean的时候重写toString的方法则是以字符串的形式返回这个javabean的所有属性信息。
   1.2 equals
-    略
+    重写equals目前学习中需要判断的几点：是否为空，内存地址是否相同，是否为本类实例(instanceof)，以及javabean中的所有属性对比。
 
 2.修改链表
   使用Object类作为存储数据类型以达到可以存放各类数据的目的。
