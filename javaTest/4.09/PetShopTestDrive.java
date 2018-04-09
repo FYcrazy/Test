@@ -1,0 +1,29 @@
+class PetShopTestDrive 
+{
+	public static void main(String[] args) 
+	{
+		PetShop ps = new PetShop();
+		ps.add(new Cat("波斯猫",1));
+		ps.add(new Cat("暹罗猫",3));
+		ps.add(new Cat("波拉米猫",1));
+		ps.add(new Dog("松狮",5));
+		ps.add(new Dog("波尔多",2));
+		ps.add(new Cat("波拉米猫",8));
+		
+		Link result = ps.search("波");
+		Object[] pets = result.toArray();
+		for(int x = 0; x < pets.length; x++){
+			System.out.println(pets[x]);
+		}
+
+		System.out.println("------------------------------------------------");
+		ps.remove(new Cat("波拉米猫",1));
+		result = ps.search("波");
+		pets = result.toArray();
+		for(int x = 0; x < pets.length; x++){
+			System.out.println(pets[x]);
+		}
+		
+
+	}
+}
